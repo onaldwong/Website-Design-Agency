@@ -1,0 +1,237 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* <weight>: Use a value from 100 to 900
+<uniquifier>: Use a unique and descriptive class name */
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+h1, h2, h3, h4 {
+font-family: Arial, Helvetica, sans-serif
+  
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#hero-container {
+    background-image: url("./assets/images/ARCC.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hero-background h1,
+.hero-background h2,
+.hero-background p {
+  color: white; !important
+}
+
+.container h1 {
+    font-size: 4rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    color: 2060af;
+    font-weight: bold;
+}
+
+.hero-background h2 {
+    font-size: 3rem;
+    
+}
+
+html h1 {
+    font-size: 4rem;
+}
+
+.features-icon {
+    height: 50px;
+    width: 50px;
+}
+
+.featured-text {
+    
+    font-size: 16px; 
+}
+.title-text {
+    color: #2060af;
+    font-size: 26px;
+}
+
+.featured-titles {
+    font-size: 20px;
+    padding-top: 10px;
+    color: #2060af;
+    text-transform: uppercase;
+}
+
+
+
+/* why choose us version 3 */
+
+.featured-icon {
+    height: 50px;
+    width: 50px;
+}
+
+ul > li {
+    
+}
+
+/* portfolio hero container */
+
+/* .portfolioHeroContainer {
+    background-color: #f7f6ff;
+    border-radius: 5px;
+} */
+
+.portfolioHeroContainer {
+    background-color: #f7f6ff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 6px 6px 5px lightblue;
+}
+
+
+/* portfolio */
+
+.image-overtext {
+    color: #7ac6d2;
+    font-family: poppins;
+}
+
+.card.card-cover {
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  
+}
+
+.portfolioContainer {
+    /* background-color: rgb(237, 141, 114, 0.3); */
+    padding: 10px;
+}
+
+.portfolioLeftBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 400px;
+}
+
+.portfolioLeftBox > div > .btn {
+    background-color: #F6C794;
+    color: black;
+    justify-self: flex-start;
+}
+
+.portfolioTag {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 4px 15px;
+    box-shadow: 6px 6px 5px #F6C794;
+}
+
+.card {
+    box-shadow: 6px 6px 5px lightblue;
+}
+
+
+/* media queries */
+
+@media (max-width: 1400px) {
+    .featured-titles {
+        min-height: 57px;
+    }
+
+    
+    
+}
+
+@media (max-width: 992px) {
+    .containerCoverText {
+        display: flex;
+        align-items: center;
+    }
+
+    .portfolioLeftBox {
+        min-height:auto;
+        display: flex;
+    }
+
+    .container h2 {
+        font-size: 2.5rem;
+        color: 2060af;
+    }
+}
+
+@media (max-width: 576px) {
+
+    h1, h2 {
+        justify-self: center;
+    }
+
+    .containerCoverText {
+        display: flex;
+        align-items: center;
+    }
+
+    .container h2 {
+        font-size: 1.7rem;
+        color: 2060af;
+    }
+
+    .portfolioImage {
+        min-width: 300px;
+    }
+
+    .portfolioLeftBox {
+        text-align: center;
+        display: flex;
+        min-height:auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    .card.card-cover {
+        min-height: 300px;
+    }
+
+    .jumboText {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center
+    }
+
+    .jumboText > ul {
+        text-align: left;
+    }
+
+    
+}
+
+
+
