@@ -1,3 +1,9 @@
+p {
+    font-size: 18px; !important
+}
+
+/* MAIN PAGE CSS */
+
 .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -15,7 +21,7 @@
   font-style: normal;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, button {
 font-family: Arial, Helvetica, sans-serif
   
 }
@@ -24,6 +30,7 @@ p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: black;
 }
 
 #hero-container {
@@ -44,18 +51,16 @@ p {
 }
 
 .container h2 {
-    font-size: 2.5rem;
-    color: 2060af;
+    font-size: 2rem;
+    color: #2060af;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .hero-background h2 {
+    color: white;
     font-size: 3rem;
     
-}
-
-html h1 {
-    font-size: 4rem;
 }
 
 .features-icon {
@@ -64,12 +69,12 @@ html h1 {
 }
 
 .featured-text {
-    
     font-size: 16px; 
 }
 .title-text {
     color: #2060af;
     font-size: 26px;
+    text-transform: uppercase;
 }
 
 .featured-titles {
@@ -79,25 +84,7 @@ html h1 {
     text-transform: uppercase;
 }
 
-
-
-/* why choose us version 3 */
-
-.featured-icon {
-    height: 50px;
-    width: 50px;
-}
-
-ul > li {
-    
-}
-
-/* portfolio hero container */
-
-/* .portfolioHeroContainer {
-    background-color: #f7f6ff;
-    border-radius: 5px;
-} */
+/* jumboBox */
 
 .portfolioHeroContainer {
     background-color: #f7f6ff;
@@ -106,8 +93,52 @@ ul > li {
     box-shadow: 6px 6px 5px lightblue;
 }
 
+ .jumboList li::marker {
+    color: #2060af;
+  }
 
-/* portfolio */
+  .jumboList p strong {
+    color: #2060af;
+  }
+
+/* Website portfolio */
+
+/* idea2 */
+
+.portfolioHeaderContainer {
+    display: flex;
+    justify-content: space-center;
+    background-color: #f7f6ff;
+    margin-top: 60px;
+}
+
+.portfolioHeader {
+    display: flex;
+    margin: 100px 80px;
+    max-width: 1200px;
+    gap: 100px;
+}
+
+.portfolioHeaderLeft {
+    max-width: 800px;
+}
+
+.portfolioHeaderRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.PortfolioButton {
+    width:200px;
+    border-radius: 10px;
+    background-color: #F6C794;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid gray;
+}
+
+/* idea2 end */
 
 .image-overtext {
     color: #7ac6d2;
@@ -154,6 +185,14 @@ ul > li {
     box-shadow: 6px 6px 5px lightblue;
 }
 
+.websitesPortfolio {
+    margin-top: -100px;
+}
+
+.footerContainer {
+    background-color: #f7f6ff;
+}
+
 
 /* media queries */
 
@@ -161,9 +200,13 @@ ul > li {
     .featured-titles {
         min-height: 57px;
     }
+}
 
-    
-    
+@media (min-width: 992px) and (max-width: 1200px) {
+    .container h2 {
+        font-size: 1.6rem;
+        color: 2060af;
+    }
 }
 
 @media (max-width: 992px) {
@@ -178,8 +221,26 @@ ul > li {
     }
 
     .container h2 {
-        font-size: 2.5rem;
+        font-size: 1.6rem;
         color: 2060af;
+    }
+
+    .portfolioHeader {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        margin: 80px 20px;
+    }
+
+    .portfolioHeaderLeft {
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .featured-titles {
+        min-height: auto;
     }
 }
 
@@ -195,7 +256,7 @@ ul > li {
     }
 
     .container h2 {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         color: 2060af;
     }
 
@@ -230,8 +291,186 @@ ul > li {
         text-align: left;
     }
 
-    
+
+}
+
+/* MAIN PAGE CSS END */
+
+.heroContainer {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-image: url(./assets/images/contactUs/vecteezy_man-pointing-at-a-wooden-block-communication-concept-with_21698967.webp);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    height: 425px;
+    color: white;
+    gap: 100px;
+    margin-top: 20px;
+    padding: 0px 20px 0px 20px;
 }
 
 
+.heroContainer h1 {
+    font-size: 30px;
+}
 
+.contactUsHeroImage {
+    height: 450px;
+    width: 600px;
+    border-radius: 0px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3),
+              0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* contact info section */
+
+
+.contactInfoMapBox {
+    background-color: ;
+    width: 1200px;
+    justify-self: center;
+    margin-bottom: 50px;
+    margin-top: -30px;
+    padding-top: 50px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3),
+              0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.contactInfoContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.contactInfos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 80px;
+}
+
+.contactBox {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contactBox > div > h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.contactBox > div > img {
+    height: 40px;
+    width: 40px;
+}
+
+/* contact info section end */
+
+.addressContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.addressBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.addressBox h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* contact us map */
+
+.mapContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  
+
+
+/* contact us map end */
+
+/* contact form start */
+
+
+.contactFormContainer {
+    display: flex;
+    justify-self: center;
+    /* background-image: url(./assets/images/ARCC.png); */
+    background-color: #f7f6ff;
+    margin-bottom: 50px;
+    padding: 100px 100px 0px 100px;
+    margin: -100px 50px 50px 50px;
+    max-width: 1230px;
+}
+
+.contactForm {
+    display: flex;
+    gap: 50px;
+}
+
+.contactFormLeftBox {
+    width: 400px;
+    padding: 30px;
+    width: 500px;
+}
+
+
+.contactFormRightBox {
+    background-color: white;
+    min-height: 500px;
+    padding: 50px;
+    min-width: 500px;
+}
+
+/* contact form end */
+
+
+/* media queries */
+
+@media (max-width: 1140px) {
+   
+    div.mapContainer iframe{
+        width: 80%;
+    }
+}
+
+@media (max-width: 950px) {
+    .contactInfos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 2fr;
+    }
+
+    .contactFormContainer {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    contactForm {
+        display: flex;
+        gap: 10px;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 500px) {
+
+}
