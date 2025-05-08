@@ -298,12 +298,12 @@ p {
 
 .heroContainer {
     display: flex;
-    justify-content:center;
+    justify-content:flex-start ;
     align-items: center;
-    background-image: url(./assets/images/contactUs/vecteezy_man-pointing-at-a-wooden-block-communication-concept-with_21698967.webp);
+    background-image: url(./assets/images/contactUs/banner/contact\ us\ banner\ ver\ 2\ 500px\ height.webp);
     background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: bottom;
+    background-repeat: no-repeat;
     height: 425px;
     color: white;
     gap: 100px;
@@ -311,9 +311,21 @@ p {
     padding: 0px 20px 0px 20px;
 }
 
+.heroTextBox {
+    margin: 200px;
+    justify-content: flex-start;
+}
 
-.heroContainer h1 {
-    font-size: 30px;
+.heroTextBox > h1 {
+    font-size: 4rem;
+    /* color: #2060af; */
+    font-weight: bold;
+}
+
+.heroTextBox > h2 {
+    font-size: 2.3rem;
+    /* color: #2060af; */
+    font-weight: bold;
 }
 
 .contactUsHeroImage {
@@ -329,11 +341,10 @@ p {
 
 
 .contactInfoMapBox {
-    background-color: ;
     width: 1200px;
     justify-self: center;
     margin-bottom: 50px;
-    margin-top: -30px;
+    margin-top: 30px;
     padding-top: 50px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3),
               0 8px 16px rgba(0, 0, 0, 0.1);
@@ -343,7 +354,7 @@ p {
     display: flex;
     justify-content: center;
     margin: 20px;
-    margin-top: 70px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
@@ -363,12 +374,13 @@ p {
 .contactBox > div > h3 {
     font-size: 20px;
     font-weight: bold;
+    color: #2060af;
 }
 
 
 .contactBox > div > img {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
 }
 
 /* contact info section end */
@@ -393,6 +405,12 @@ p {
 .addressBox h3 {
     font-size: 20px;
     font-weight: bold;
+    color: #2060af;
+}
+
+.addressBox img {
+    height: 60px;
+    width: 60px;
 }
 
 /* contact us map */
